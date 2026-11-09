@@ -1,0 +1,23 @@
+{
+  "name": "buspulse",
+  "version": "1.0.0",
+  "description": "BusPulse – College Bus Tracking System",
+  "private": true,
+  "scripts": {
+    "dev": "node -e \"const { spawn } = require('child_process'); spawn('node', ['server.js'], { cwd: './server', stdio: 'inherit' }); spawn('./node_modules/.bin/vite', [], { cwd: './client', stdio: 'inherit' });\"",
+    "start:server": "cd server && node server.js",
+    "start:client": "cd client && ./node_modules/.bin/vite",
+    "build": "cd client && ./node_modules/.bin/vite build",
+    "seed": "cd server && node utils/seeder.js"
+  },
+  "keywords": [
+    "college-bus-tracking",
+    "react",
+    "express",
+    "socketio",
+    "leaflet",
+    "mongodb"
+  ],
+  "author": "BusPulse Team",
+  "license": "ISC"
+}
